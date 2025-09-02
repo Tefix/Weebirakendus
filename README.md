@@ -1,6 +1,6 @@
 ##VeebiRakenduste teemat
 
-HTML
-CSS
-JavaScript
-React
+1 HTML
+2 CSS
+3 JavaScript
+4 React

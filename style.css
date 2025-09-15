@@ -1,0 +1,138 @@
+/* Общие стили */
+body {
+    background: #fef6f0; /* очень светлый пастельный беж */
+    color: #5a4d41; /* тёмно-коричневый, мягкий для текста */
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* Шапка */
+header {
+    background: #c8d8d8 url("nevermore.png") no-repeat 15px center; /* пастельный голубовато-серый */
+    background-size: 100px 100px;
+    color: #4a4943; /* мягкий тёмно-серый */
+    letter-spacing: 0.1cm;
+    padding: 40px 20px 40px 130px;
+    font-variant: all-petite-caps;
+    font-size: 16pt;
+    border-bottom: 2px solid #b0b8b8;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Навигация */
+nav {
+    background: #a3c9c9; /* мягкий пастельный голубой */
+    border-top: 1px solid #d1e0e0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #4a4943;
+    text-decoration: none;
+    font-variant: all-petite-caps;
+    font-size: 14pt;
+    border-right: 1px solid #d1e0e0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li:last-child a {
+    border-right: none;
+}
+
+nav ul li a:hover {
+    background: #d6e6e6;
+    color: #2e2c26;
+}
+
+/* Контент */
+section {
+    background: #fff9f4; /* очень светлый пастельный кремовый */
+    color: #5a4d41;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(90,77,65,0.1);
+}
+
+section#Osa2 {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 28px;
+    color: #4a4943;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #6b6558;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/* Блоки тем */
+#Teemad, #Lingid {
+    margin-top: 20px;
+}
+
+#Teemad h2, #Lingid h2 {
+    font-size: 20px;
+}
+
+#Teemad ul, #Lingid ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 12px;
+    border-left: 3px solid #a3c9c9;
+}
+
+#Teemad ul li, #Lingid ul li {
+    margin-bottom: 8px;
+    font-size: 16pt;
+    font-variant: all-petite-caps;
+}
+
+/* Подвал */
+footer {
+    background-color: #c8d8d8;
+    color: #4a4943;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 2px solid #b0b8b8;
+}

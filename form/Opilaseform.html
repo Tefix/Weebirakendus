@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <title>ÕPILASE REGISTREERIMISVORM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>ÕPILASE REGISTREERIMISVORM</h2>
+
+<form>
+  <fieldset>
+    <legend>Isikuandmed</legend>
+
+    <label for="eesnimi">Eesnimi</label><br>
+    <input type="text" id="eesnimi" name="eesnimi" maxlength="30" required placeholder="nt Mario"><br><br>
+
+    <label for="perenimi">Perenimi</label><br>
+    <input type="text" id="perenimi" name="perenimi" maxlength="30" required placeholder="nt Metshein"><br><br>
+
+    <label for="synniaeg">Sünnikuupäev</label><br>
+    <input type="date" id="synniaeg" name="synniaeg" min="1950-01-01" max="2025-12-31" value="1980-01-01" required><br><br>
+
+    <label>Sugu</label><br>
+    <input type="radio" id="naine" name="sugu" value="Naine">
+    <label for="naine">Naine</label>
+    <input type="radio" id="mees" name="sugu" value="Mees">
+    <label for="mees">Mees</label>
+    <input type="radio" id="muu" name="sugu" value="Muu">
+    <label for="muu">Muu</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Kontakt</legend>
+
+    <label for="email">E-post</label><br>
+    <input type="email" id="email" name="email" maxlength="100" required placeholder="nt nimi@kool.ee"><br><br>
+
+    <label for="telefon">Mobiiltelefon</label><br>
+    <input type="tel" id="telefon" name="telefon" pattern="^\+372\s?\d{7,8}$" placeholder="+372 51234567" required><br><br>
+
+    <label for="aadress">Aadress</label><br>
+    <textarea id="aadress" name="aadress" rows="3" placeholder="Tänav, maja, korter"></textarea><br><br>
+
+    <label for="linn">Linn / asula</label><br>
+    <input type="text" id="linn" name="linn" maxlength="30" required placeholder="nt Tallinn"><br><br>
+
+    <label for="postindeks">Postiindeks</label><br>
+    <input type="text" id="postindeks" name="postindeks" pattern="^\d{5}$" placeholder="nt 10111" required><br><br>
+
+    <label for="riik">Riik</label><br>
+    <input type="text" id="riik" name="riik" value="Eesti" readonly>
+  </fieldset>
+
+  <div class="center">
+    <button type="submit">Saada</button>
+  </div>
+</form>
+
+</body>
+</html>
